@@ -1,5 +1,5 @@
 ---
-title: What is CBTI?
+title: What is CPTI?
 layout: "../layouts/content.astro"
 ---
 

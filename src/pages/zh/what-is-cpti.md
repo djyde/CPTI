@@ -1,10 +1,10 @@
 ---
-title: 什么是 CBTI?
+title: 什么是 CPTI?
 layout: "../../layouts/content.astro"
 ---
 
 
-# 什么是 CBTI?
+# 什么是 CPTI?
 
 CPTI 是"编程人格类型指标"（Coding Personality Type Indicator）的缩写。它是为程序员设计的 MBTI 人格测试。
 
