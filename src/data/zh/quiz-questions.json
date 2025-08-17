@@ -292,12 +292,12 @@
     },
     {
       "id": 30,
-      "text": "在处理紧急线上问题时，你会？",
+      "text": "你在咖啡厅偶遇一位技术大牛，最想和他聊什么？",
       "options": [
-        { "text": "快速定位问题并临时修复", "dimension": "X", "weight": 2 },
-        { "text": "仔细分析根本原因再处理", "dimension": "Q", "weight": 2 },
-        { "text": "遵循标准流程，确保不出错", "dimension": "R", "weight": 1 },
-        { "text": "及时通知相关人员和用户", "dimension": "T", "weight": 1 }
+        { "text": "他最近在研究什么有趣的技术", "dimension": "Q", "weight": 2 },
+        { "text": "如何平衡技术债务和业务需求", "dimension": "G", "weight": 2 },
+        { "text": "怎样搭建高可用的系统架构", "dimension": "I", "weight": 1 },
+        { "text": "如何做出用户真正喜欢的产品", "dimension": "U", "weight": 1 }
       ]
     }
   ]

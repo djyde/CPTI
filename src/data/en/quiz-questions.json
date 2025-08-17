@@ -292,12 +292,12 @@
     },
     {
       "id": 30,
-      "text": "When handling urgent production issues, what would you do?",
+      "text": "You bump into a tech expert at a coffee shop. What would you most want to chat about?",
       "options": [
-        { "text": "Quickly locate the problem and apply a temporary fix", "dimension": "X", "weight": 2 },
-        { "text": "Carefully analyze the root cause before handling", "dimension": "Q", "weight": 2 },
-        { "text": "Follow standard procedures to ensure no mistakes", "dimension": "R", "weight": 1 },
-        { "text": "Promptly notify relevant people and users", "dimension": "T", "weight": 1 }
+        { "text": "What interesting technologies they're researching lately", "dimension": "Q", "weight": 2 },
+        { "text": "How to balance technical debt and business requirements", "dimension": "G", "weight": 2 },
+        { "text": "How to build highly available system architecture", "dimension": "I", "weight": 1 },
+        { "text": "How to create products users truly love", "dimension": "U", "weight": 1 }
       ]
     }
   ]
