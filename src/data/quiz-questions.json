@@ -1,0 +1,304 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "周末你更愿意做什么？",
+      "options": [
+        { "text": "重构一个老项目的代码架构", "dimension": "I", "weight": 2 },
+        { "text": "设计一个漂亮的登录页面", "dimension": "U", "weight": 2 },
+        { "text": "研究一个新的算法", "dimension": "Q", "weight": 1 },
+        { "text": "优化现有功能的用户体验", "dimension": "U", "weight": 1 }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "当你看到一个很酷的新技术时，你的第一反应是？",
+      "options": [
+        { "text": "先看看它的稳定性和社区支持", "dimension": "R", "weight": 2 },
+        { "text": "立刻创建一个demo试试", "dimension": "X", "weight": 2 },
+        { "text": "研究它的底层实现原理", "dimension": "Q", "weight": 1 },
+        { "text": "想想如何在团队中推广", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "你最享受编程中的哪个时刻？",
+      "options": [
+        { "text": "看到用户对你的产品赞不绝口", "dimension": "U", "weight": 2 },
+        { "text": "系统在高并发下依然稳定运行", "dimension": "I", "weight": 2 },
+        { "text": "代码重构后变得优雅简洁", "dimension": "G", "weight": 1 },
+        { "text": "深夜独自解决一个复杂bug", "dimension": "O", "weight": 1 }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "面对一个紧急bug，你会？",
+      "options": [
+        { "text": "快速写个hotfix先解决问题", "dimension": "X", "weight": 2 },
+        { "text": "仔细分析根本原因再修复", "dimension": "R", "weight": 2 },
+        { "text": "和团队一起讨论最佳方案", "dimension": "T", "weight": 1 },
+        { "text": "独自深入研究直到完全理解", "dimension": "O", "weight": 1 }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "你认为好代码最重要的特质是？",
+      "options": [
+        { "text": "可读性强，像诗一样优美", "dimension": "G", "weight": 2 },
+        { "text": "能解决实际问题就行", "dimension": "Q", "weight": 2 },
+        { "text": "经过充分测试，稳定可靠", "dimension": "R", "weight": 1 },
+        { "text": "团队成员都能轻松理解", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "在技术选型时，你更倾向于？",
+      "options": [
+        { "text": "选择经过验证的成熟方案", "dimension": "R", "weight": 2 },
+        { "text": "尝试最新最酷的技术", "dimension": "X", "weight": 2 },
+        { "text": "选择能最好展示产品的技术", "dimension": "U", "weight": 1 },
+        { "text": "选择性能和扩展性最好的", "dimension": "I", "weight": 1 }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "你更喜欢参与哪种类型的项目？",
+      "options": [
+        { "text": "从0到1构建用户产品", "dimension": "U", "weight": 2 },
+        { "text": "设计分布式系统架构", "dimension": "I", "weight": 2 },
+        { "text": "探索前沿技术的可能性", "dimension": "Q", "weight": 1 },
+        { "text": "维护和优化现有系统", "dimension": "G", "weight": 1 }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "工作中你最有成就感的是？",
+      "options": [
+        { "text": "独立完成一个完整功能", "dimension": "O", "weight": 2 },
+        { "text": "和团队一起攻克难题", "dimension": "T", "weight": 2 },
+        { "text": "写出优雅的解决方案", "dimension": "G", "weight": 1 },
+        { "text": "发现新的技术突破点", "dimension": "Q", "weight": 1 }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "你如何看待代码注释？",
+      "options": [
+        { "text": "好代码应该自解释，少写注释", "dimension": "G", "weight": 2 },
+        { "text": "注释很重要，方便团队理解", "dimension": "T", "weight": 2 },
+        { "text": "复杂逻辑必须有详细注释", "dimension": "R", "weight": 1 },
+        { "text": "能跑就行，注释看心情", "dimension": "X", "weight": 1 }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "遇到性能问题时，你会？",
+      "options": [
+        { "text": "深入分析瓶颈，系统性优化", "dimension": "I", "weight": 2 },
+        { "text": "先优化用户能感知的部分", "dimension": "U", "weight": 2 },
+        { "text": "研究各种优化算法和技巧", "dimension": "Q", "weight": 1 },
+        { "text": "按照最佳实践逐步改进", "dimension": "R", "weight": 1 }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "你更愿意花时间在？",
+      "options": [
+        { "text": "研究底层原理和新技术", "dimension": "Q", "weight": 2 },
+        { "text": "打磨代码的优雅程度", "dimension": "G", "weight": 2 },
+        { "text": "确保系统的稳定性", "dimension": "R", "weight": 1 },
+        { "text": "改善用户交互体验", "dimension": "U", "weight": 1 }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "理想的工作环境是？",
+      "options": [
+        { "text": "安静的独立空间，专注编码", "dimension": "O", "weight": 2 },
+        { "text": "开放的协作空间，随时交流", "dimension": "T", "weight": 2 },
+        { "text": "有大屏幕显示系统监控", "dimension": "I", "weight": 1 },
+        { "text": "能展示作品的设计环境", "dimension": "U", "weight": 1 }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "对于单元测试，你的态度是？",
+      "options": [
+        { "text": "必不可少，是代码质量的保障", "dimension": "R", "weight": 2 },
+        { "text": "太费时间，快速迭代更重要", "dimension": "X", "weight": 2 },
+        { "text": "测试也要写得优雅易懂", "dimension": "G", "weight": 1 },
+        { "text": "团队规范要求就写", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "你更喜欢解决哪类问题？",
+      "options": [
+        { "text": "用户体验和界面交互", "dimension": "U", "weight": 2 },
+        { "text": "系统架构和数据流", "dimension": "I", "weight": 2 },
+        { "text": "算法优化和性能调优", "dimension": "Q", "weight": 1 },
+        { "text": "代码重构和模式设计", "dimension": "G", "weight": 1 }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "开始一个新项目时，你会？",
+      "options": [
+        { "text": "先搭建完整的开发环境", "dimension": "R", "weight": 2 },
+        { "text": "直接开始写核心功能", "dimension": "X", "weight": 2 },
+        { "text": "仔细设计项目架构", "dimension": "G", "weight": 1 },
+        { "text": "和团队讨论技术方案", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "你认为程序员最重要的技能是？",
+      "options": [
+        { "text": "独立解决复杂问题", "dimension": "O", "weight": 2 },
+        { "text": "有效的团队协作", "dimension": "T", "weight": 2 },
+        { "text": "对新技术的敏感度", "dimension": "Q", "weight": 1 },
+        { "text": "写出清晰易懂的代码", "dimension": "G", "weight": 1 }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "面对技术债务，你会？",
+      "options": [
+        { "text": "制定计划逐步重构", "dimension": "R", "weight": 2 },
+        { "text": "能用就行，先做新功能", "dimension": "X", "weight": 2 },
+        { "text": "重写成更优雅的版本", "dimension": "G", "weight": 1 },
+        { "text": "评估对用户的影响", "dimension": "U", "weight": 1 }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "你更关注代码的？",
+      "options": [
+        { "text": "运行效率和资源消耗", "dimension": "I", "weight": 2 },
+        { "text": "用户感知和交互流畅", "dimension": "U", "weight": 2 },
+        { "text": "可维护性和扩展性", "dimension": "R", "weight": 1 },
+        { "text": "创新性和技术含量", "dimension": "X", "weight": 1 }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "学习新技术时，你倾向于？",
+      "options": [
+        { "text": "深入研究原理和源码", "dimension": "Q", "weight": 2 },
+        { "text": "快速上手做个项目", "dimension": "X", "weight": 2 },
+        { "text": "按照最佳实践学习", "dimension": "R", "weight": 1 },
+        { "text": "和同事一起学习讨论", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "你最不能忍受的代码是？",
+      "options": [
+        { "text": "逻辑混乱，难以理解", "dimension": "G", "weight": 2 },
+        { "text": "缺乏测试，容易出错", "dimension": "R", "weight": 2 },
+        { "text": "性能低下，影响体验", "dimension": "I", "weight": 1 },
+        { "text": "界面丑陋，用户体验差", "dimension": "U", "weight": 1 }
+      ]
+    },
+    {
+      "id": 21,
+      "text": "在代码审查中，你最关注？",
+      "options": [
+        { "text": "代码风格和命名规范", "dimension": "G", "weight": 2 },
+        { "text": "潜在的bug和边界情况", "dimension": "R", "weight": 2 },
+        { "text": "是否有更好的实现方式", "dimension": "Q", "weight": 1 },
+        { "text": "团队成员能否理解", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 22,
+      "text": "你更享受哪种编程体验？",
+      "options": [
+        { "text": "一个人专注地深入思考", "dimension": "O", "weight": 2 },
+        { "text": "和同事实时讨论想法", "dimension": "T", "weight": 2 },
+        { "text": "看到界面效果的即时反馈", "dimension": "U", "weight": 1 },
+        { "text": "系统监控数据的变化", "dimension": "I", "weight": 1 }
+      ]
+    },
+    {
+      "id": 23,
+      "text": "对于开源项目，你更愿意？",
+      "options": [
+        { "text": "贡献新功能和创新想法", "dimension": "X", "weight": 2 },
+        { "text": "修复bug和完善文档", "dimension": "R", "weight": 2 },
+        { "text": "优化代码结构和设计", "dimension": "G", "weight": 1 },
+        { "text": "帮助社区成员解决问题", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 24,
+      "text": "你认为好的软件应该？",
+      "options": [
+        { "text": "界面直观，用户易上手", "dimension": "U", "weight": 2 },
+        { "text": "架构清晰，易于扩展", "dimension": "I", "weight": 2 },
+        { "text": "代码优雅，逻辑清晰", "dimension": "G", "weight": 1 },
+        { "text": "功能创新，技术前沿", "dimension": "Q", "weight": 1 }
+      ]
+    },
+    {
+      "id": 25,
+      "text": "遇到难题时，你会？",
+      "options": [
+        { "text": "独自钻研直到解决", "dimension": "O", "weight": 2 },
+        { "text": "寻求团队的帮助", "dimension": "T", "weight": 2 },
+        { "text": "查阅文档和最佳实践", "dimension": "R", "weight": 1 },
+        { "text": "尝试不同的解决思路", "dimension": "X", "weight": 1 }
+      ]
+    },
+    {
+      "id": 26,
+      "text": "你更愿意维护哪种系统？",
+      "options": [
+        { "text": "用户界面和交互逻辑", "dimension": "U", "weight": 2 },
+        { "text": "后端服务和数据库", "dimension": "I", "weight": 2 },
+        { "text": "核心算法和业务逻辑", "dimension": "Q", "weight": 1 },
+        { "text": "构建工具和开发流程", "dimension": "R", "weight": 1 }
+      ]
+    },
+    {
+      "id": 27,
+      "text": "对于新需求，你的第一反应是？",
+      "options": [
+        { "text": "思考如何实现最佳用户体验", "dimension": "U", "weight": 2 },
+        { "text": "评估对系统架构的影响", "dimension": "I", "weight": 2 },
+        { "text": "寻找最优雅的实现方案", "dimension": "G", "weight": 1 },
+        { "text": "快速做个原型验证想法", "dimension": "X", "weight": 1 }
+      ]
+    },
+    {
+      "id": 28,
+      "text": "你更喜欢哪种工作节奏？",
+      "options": [
+        { "text": "稳定迭代，确保质量", "dimension": "R", "weight": 2 },
+        { "text": "快速试错，敏捷开发", "dimension": "X", "weight": 2 },
+        { "text": "深度思考，精雕细琢", "dimension": "G", "weight": 1 },
+        { "text": "团队协作，定期同步", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 29,
+      "text": "你认为技术创新应该？",
+      "options": [
+        { "text": "探索未知的技术边界", "dimension": "Q", "weight": 2 },
+        { "text": "解决实际的业务问题", "dimension": "G", "weight": 2 },
+        { "text": "提升用户的使用体验", "dimension": "U", "weight": 1 },
+        { "text": "建立在稳定的基础上", "dimension": "R", "weight": 1 }
+      ]
+    },
+    {
+      "id": 30,
+      "text": "理想的代码库应该是？",
+      "options": [
+        { "text": "任何人都能快速理解", "dimension": "T", "weight": 2 },
+        { "text": "我能独立掌控全局", "dimension": "O", "weight": 2 },
+        { "text": "架构清晰，性能优异", "dimension": "I", "weight": 1 },
+        { "text": "界面精美，交互流畅", "dimension": "U", "weight": 1 }
+      ]
+    }
+  ]
+}

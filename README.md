@@ -1,46 +1,44 @@
-# Astro Starter Kit: Basics
+# CPTI – Coder Personality Type Indicator
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+**CPTI** is a personality framework designed for developers. Inspired by MBTI, it maps programmers into **16 types** based on four dimensions that reflect how we code, collaborate, and explore technology.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Unlike traditional personality systems, CPTI speaks the native language of engineers — code, infra, bugs, and side-projects.
 
-## 🚀 Project Structure
+## 🔑 The Four Dimensions
 
-Inside of your Astro project, you'll see the following folders and files:
+### 1. **U / I → User-facing vs Infra**
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+* **U (User-facing)**: Focused on UI, UX, design systems, and front-end work. Think in terms of how end users experience the product.
+* **I (Infra)**: Focused on architecture, data, and system stability. Think in terms of scale, performance, and reliability.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+### 2. **R / X → Reliable vs Experimental**
 
-## 🧞 Commands
+* **R (Reliable)**: Values stability, tests, documentation, and long-term maintainability. “If it’s not tested, it’s broken.”
+* **X (Experimental)**: Loves prototyping, trying new frameworks, moving fast and breaking things. “Let’s ship and see what happens.”
 
-All commands are run from the root of the project, from a terminal:
+### 3. **G / Q → Guild-like vs Quest-like**
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+* **G (Guild-like)**: Sees coding as a craft. Strives for elegant, readable, and maintainable solutions. Believes in clean design and patterns.
+* **Q (Quest-like)**: Sees coding as exploration. Loves diving into unknowns, new languages, weird algorithms, or system internals.
 
-## 👀 Want to learn more?
+### 4. **O / T → One-man vs Team-up**
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+* **O (One-man)**: Independent builder. Enjoys going full-stack solo, hacking away in deep focus.
+* **T (Team-up)**: Collaborative. Enjoys pair programming, design reviews, and team rituals.
+
+## 🧑‍💻 How CPTI Works
+
+A CPTI type is represented by **four letters** — one from each dimension.
+For example:
+
+* **URGO** → *User-facing, Reliable, Guild-like, One-man*
+
+  * “The Pixel Craftsman” who polishes UI details alone until they’re perfect.
+
+* **IXQT** → *Infra, Experimental, Quest-like, Team-up*
+
+  * “The Tech Adventurer” who rallies teammates to try bleeding-edge tools.
+
+* **IRGT** → *Infra, Reliable, Guild-like, Team-up*
+
+  * “The Architecture Guardian” who builds standards and protects stability.
