@@ -1,0 +1,31 @@
+{
+  "nav.home": "Home",
+  "nav.quiz": "Quiz",
+  "nav.back": "Back",
+  "nav.retake": "Retake Quiz",
+  
+  "home.title": "CPTI",
+  "home.subtitle": "Coder Personality Type Identification",
+  "home.startTest": "Start Test",
+  "home.startTest.zh": "开始测试",
+  
+  "quiz.title": "Coder Personality Type Quiz",
+  "quiz.subtitle": "Discover your programming personality type",
+  "quiz.next": "Next",
+  "quiz.previous": "Previous",
+  "quiz.submit": "Submit",
+  "quiz.loading": "Loading...",
+  "quiz.progress": "Question {current} of {total}",
+  
+  "type.coreTraits": "Core Traits",
+  "type.strengths": "Strengths",
+  "type.challenges": "Challenges",
+  "type.retakeQuiz": "Retake Quiz",
+  "type.footer.title": "CPTI",
+  "type.footer.subtitle": "Coder Personality Type Indicator",
+  
+  "common.loading": "Loading...",
+  "common.error": "An error occurred",
+  "common.copySuccess": "Link copied to clipboard!",
+  "common.copyError": "Copy failed, please copy the link manually"
+}

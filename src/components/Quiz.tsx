@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import quizData from '../data/quiz-questions.json';
+import { useTranslations, type Lang } from '../i18n/ui';
 
 interface QuizOption {
   text: string;
@@ -18,10 +18,76 @@ interface QuizAnswer {
   selectedOption: QuizOption;
 }
 
-export default function Quiz() {
+interface QuizData {
+  questions: QuizQuestion[];
+}
+
+interface QuizProps {
+  lang?: Lang;
+}
+
+export default function Quiz({ lang = 'en' }: QuizProps) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<QuizAnswer[]>([]);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [quizData, setQuizData] = useState<QuizData | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  const t = useTranslations(lang);
+
+  // Fisher-Yates shuffle algorithm to randomize array
+  const shuffleArray = <T,>(array: T[]): T[] => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+
+  // Load quiz data based on language
+  useEffect(() => {
+    const loadQuizData = async () => {
+      try {
+        setLoading(true);
+        const data = await import(`../data/${lang}/quiz-questions.json`);
+        // Shuffle the questions to randomize the quiz
+        const shuffledData = {
+          ...data.default,
+          questions: shuffleArray(data.default.questions)
+        };
+        setQuizData(shuffledData);
+      } catch (error) {
+        console.error('Failed to load quiz data:', error);
+        // Fallback to English if the language file doesn't exist
+        try {
+          const fallbackData = await import(`../data/en/quiz-questions.json`);
+          // Shuffle the fallback questions too
+          const shuffledFallbackData = {
+            ...fallbackData.default,
+            questions: shuffleArray(fallbackData.default.questions)
+          };
+          setQuizData(shuffledFallbackData);
+        } catch (fallbackError) {
+          console.error('Failed to load fallback quiz data:', fallbackError);
+        }
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadQuizData();
+  }, [lang]);
+
+  if (loading || !quizData) {
+    return (
+      <div className="quiz-container">
+        <div className="flex items-center justify-center min-h-[400px]">
+          <div className="text-flexoki-base-500">{t('quiz.loading')}</div>
+        </div>
+      </div>
+    );
+  }
 
   const questions: QuizQuestion[] = quizData.questions;
   const currentQuestion = questions[currentQuestionIndex];
@@ -76,7 +142,8 @@ export default function Quiz() {
       if (isLastQuestion) {
         // Quiz completed - calculate personality type and redirect
         const personalityType = calculatePersonalityType(updatedAnswers);
-        window.location.href = `/results/${personalityType}`;
+        const basePath = lang === 'en' ? '' : `/${lang}`;
+        window.location.href = `${basePath}/types/${personalityType}`;
       } else {
         // Move to next question
         setCurrentQuestionIndex(prev => prev + 1);
@@ -103,7 +170,7 @@ export default function Quiz() {
       <div className="quiz-header">
         <div className="flex flex-col gap-1 w-full mb-4">
           <div className="flex justify-between text-sm text-flexoki-base-500">
-            <span>{currentQuestionIndex + 1} / {questions.length}</span>
+            <span>{t('quiz.progress', { current: currentQuestionIndex + 1, total: questions.length })}</span>
           </div>
           <div className="h-2 w-full bg-flexoki-green-50 rounded-full overflow-hidden">
             <div
@@ -129,7 +196,7 @@ export default function Quiz() {
               <div
                 role="checkbox"
                 key={index}
-                className={'hover:text-flexoki-base-800 flex items-center cursor-pointer bg-flexoki-green-50/50 ring-flexoki-green-50/50 rounded px-3 py-2 text-flexoki-base-500  lg:w-[400px] w-full text-left hover:bg-flexoki-green-50 transition-all duration-300 ease-in-out'}
+                className={'hover:text-flexoki-base-800 flex items-center cursor-pointer bg-flexoki-green-50/50 ring-flexoki-green-50/50 rounded-lg px-3 py-2 text-flexoki-base-500  lg:w-[400px] w-full text-left hover:bg-flexoki-green-50 transition-all duration-300 ease-in-out'}
                 onClick={() => handleOptionSelect(option)}
               >
                 <div>
@@ -148,7 +215,7 @@ export default function Quiz() {
         </div>
       </div>
 
-      <div className="mt-3">
+      <div className="mt-5">
         <button
           className={`text-flexoki-green-500 text-sm flex items-center cursor-pointer`}
           onClick={handlePrevious}
@@ -157,7 +224,7 @@ export default function Quiz() {
           <svg xmlns="http://www.w3.org/2000/svg" className="inline-flex h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
-          Previous
+          {t('quiz.previous')}
         </button>
 
         <div className="nav-spacer" />

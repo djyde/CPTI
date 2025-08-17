@@ -1,0 +1,37 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import * as whatIs from "../../content/zh/what-is.md";
+import { getLangFromUrl, useTranslations } from "../../i18n/ui";
+import Footer from "../../components/Footer.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout>
+  <main class="max-w-[960px] mx-auto px-8 lg:px-0">
+    <div class="space-y-4 pt-12">
+      <div class="space-y-1">
+        <h1 class="text-3xl font-bold text-flexoki-base-700">{t('home.title')}</h1>
+        <p class="text-lg text-flexoki-base-500">
+          {t('home.subtitle')}
+        </p>
+      </div>
+      <a
+        href="/zh/quiz"
+        class="inline-flex bg-flexoki-green-500 text-flexoki-paper font-medium px-2 py-1 text-sm rounded-md"
+        >{t('home.startTest')}</a
+      >
+      <div class="prose max-w-[960px] mt-12">
+        <whatIs.Content />
+      </div>
+
+      <a
+        href="/zh/quiz"
+        class="inline-flex bg-flexoki-green-500 text-flexoki-paper font-medium px-2 py-1 text-sm rounded-md"
+        >{t('home.startTest')}</a
+      >
+    </div>
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,51 @@
+---
+import { languages, getLangFromUrl, defaultLang, getOppositeLang, isSupportedLang, getPathForLang, getPathWithoutLang } from '../i18n/ui';
+
+// Initialize variables with fallback values
+let otherPath = '/';
+let otherLangName = 'English';
+let switchLabel = 'Switch to English';
+let otherLang = 'en';
+
+try {
+  // Get current language with fallback
+  const currentLang = getLangFromUrl(Astro.url);
+
+  // Safely extract current path and remove language prefix
+  const currentPath = Astro.url.pathname || '/';
+  const pathWithoutLang = getPathWithoutLang(currentPath, currentLang);
+
+  // Determine other language with validation
+  otherLang = getOppositeLang(currentLang);
+
+  // Validate that the other language exists in our configuration
+  if (!isSupportedLang(otherLang)) {
+    throw new Error(`Unsupported language: ${otherLang}`);
+  }
+
+  // Construct the other language path
+  otherPath = getPathForLang(pathWithoutLang, otherLang);
+
+  // Ensure we have a valid language name for display
+  otherLangName = languages[otherLang] || 'Unknown';
+
+  // Generate accessible label
+  switchLabel = `Switch to ${otherLangName}`;
+} catch (error) {
+  console.error('LanguageSwitcher error:', error);
+  // Variables already have fallback values
+}
+---
+
+<div class="language-switcher">
+  <a
+    href={otherPath}
+    class="inline-flex items-center px-3 py-1 text-sm font-medium text-flexoki-base-600 hover:text-flexoki-base-800 border border-flexoki-base-300 rounded-md hover:bg-flexoki-base-50 transition-colors"
+    aria-label={switchLabel}
+    title={switchLabel}
+    hreflang={otherLang}
+    lang={otherLang}
+  >
+    {otherLangName}
+  </a>
+</div>

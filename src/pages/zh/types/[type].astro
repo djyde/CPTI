@@ -1,0 +1,142 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import personalityTypesDataZh from "../../../data/zh/personality-types.json";
+import { getLangFromUrl, useTranslations } from "../../../i18n/ui";
+
+export async function getStaticPaths() {
+  const types = Object.keys(personalityTypesDataZh.types);
+  console.log(types);
+  return types.map((type) => ({
+    params: { type: type },
+  }));
+}
+
+const { type } = Astro.params;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+// Load personality types data based on language
+const personalityTypesData = lang === 'en' 
+  ? await import("../../../data/en/personality-types.json")
+  : personalityTypesDataZh;
+
+const personalityType =
+  personalityTypesData.types[type as keyof typeof personalityTypesData.types];
+
+if (!personalityType) {
+  return Astro.redirect("/404");
+}
+---
+
+<Layout>
+  <div class="min-h-screen bg-flexoki-paper">
+ 
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto px-8 py-16">
+      <!-- Hero Section -->
+      <div class="mb-8">
+        <div class="text-8xl mb-8 text-flexoki-black tracking-wider">
+          {type}
+        </div>
+        <h1 class="text-2xl mb-4 text-flexoki-base-700">
+          {personalityType.name}
+        </h1>
+        <p class="text-base text-flexoki-base-700 leading-loose">
+          {personalityType.description}
+        </p>
+      </div>
+
+      <!-- Traits Section -->
+      <section class="mb-8">
+        <h2
+          class="text-sm text-flexoki-base-500/60 font-bold mb-2 tracking-widest uppercase"
+        >
+          {t('type.coreTraits')}
+        </h2>
+        <div class="space-y-3 flex gap-3">
+          {
+            personalityType.traits.map((trait: string) => (
+              <span class="text-flexoki-base-800">{trait}</span>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- Strengths and Challenges -->
+      <div class="grid md:grid-cols-2 gap-16 mb-20">
+        <!-- Strengths -->
+        <section class="">
+          <h2
+            class="text-sm text-flexoki-base-500/60 font-bold mb-2 tracking-widest uppercase"
+          >
+            {t('type.strengths')}
+          </h2>
+          <ul class="space-y-2">
+            {
+              personalityType.strengths.map((strength: string) => (
+                <li class="text-flexoki-base-700  leading-relaxed">
+                  {strength}
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+
+        <!-- Challenges -->
+        <section>
+          <h2
+            class="text-sm text-flexoki-base-500/60 font-bold mb-2 tracking-widest uppercase"
+          >
+            {t('type.challenges')}
+          </h2>
+          <ul class="space-y-2">
+            {
+              personalityType.challenges.map((challenge: string) => (
+                <li class="text-flexoki-base-700  leading-relaxed">
+                  {challenge}
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="text-center space-y-8 mt-24">
+        <a
+          href="/zh/quiz"
+          class="inline-flex text-flexoki-base-600 hover:text-flexoki-base-800 text-sm tracking-wide uppercase border-b border-flexoki-base-300 pb-1"
+        >
+          {t('type.retakeQuiz')}
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-32 pb-16">
+      <div class="max-w-3xl mx-auto px-8">
+        <div class="text-center">
+          <p
+            class="text-xs text-flexoki-base-500 tracking-widest uppercase mb-2"
+          >
+            {t('type.footer.title')}
+          </p>
+          <p class="text-xs text-flexoki-base-500">{t('type.footer.subtitle')}</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function copyToClipboard(text: string) {
+      navigator.clipboard
+        .writeText(text)
+        .then(() => {
+          alert("链接已复制到剪贴板！");
+        })
+        .catch(() => {
+          alert("复制失败，请手动复制链接");
+        });
+    }
+  </script>
+</Layout>

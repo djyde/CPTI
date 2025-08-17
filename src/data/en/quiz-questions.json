@@ -1,0 +1,304 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "What would you prefer to do on the weekend?",
+      "options": [
+        { "text": "Refactor the code architecture of an old project", "dimension": "I", "weight": 2 },
+        { "text": "Create a smooth onboarding flow for new users", "dimension": "U", "weight": 2 },
+        { "text": "Research a new algorithm", "dimension": "Q", "weight": 1 },
+        { "text": "Improve how people interact with existing features", "dimension": "U", "weight": 1 }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "When you see a cool new technology, what's your first reaction?",
+      "options": [
+        { "text": "Check its stability and community support first", "dimension": "R", "weight": 2 },
+        { "text": "Immediately create a demo to try it out", "dimension": "X", "weight": 2 },
+        { "text": "Study its underlying implementation principles", "dimension": "Q", "weight": 1 },
+        { "text": "Think about how to promote it within the team", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Which moment in programming do you enjoy most?",
+      "options": [
+        { "text": "Seeing users praise your product", "dimension": "U", "weight": 2 },
+        { "text": "System running stably under high concurrency", "dimension": "I", "weight": 2 },
+        { "text": "Code becoming elegant and concise after refactoring", "dimension": "G", "weight": 1 },
+        { "text": "Solving a complex bug alone late at night", "dimension": "O", "weight": 1 }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "What type of technical discussions do you prefer to participate in?",
+      "options": [
+        { "text": "Sharing latest tech trends and tools", "dimension": "X", "weight": 2 },
+        { "text": "Discussing how to improve system reliability", "dimension": "R", "weight": 2 },
+        { "text": "Organizing team technical sharing sessions", "dimension": "T", "weight": 1 },
+        { "text": "Deep diving into algorithms and architecture design", "dimension": "O", "weight": 1 }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "What do you think is the most important quality of good code?",
+      "options": [
+        { "text": "High readability, beautiful like poetry", "dimension": "G", "weight": 2 },
+        { "text": "Just needs to solve practical problems", "dimension": "Q", "weight": 2 },
+        { "text": "Thoroughly tested, stable and reliable", "dimension": "R", "weight": 1 },
+        { "text": "Easy for team members to understand", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "When choosing technology, you prefer to?",
+      "options": [
+        { "text": "Choose proven and mature solutions", "dimension": "R", "weight": 2 },
+        { "text": "Try the latest and coolest technology", "dimension": "X", "weight": 2 },
+        { "text": "Choose technology that best showcases the product", "dimension": "U", "weight": 1 },
+        { "text": "Choose the best performance and scalability", "dimension": "I", "weight": 1 }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "What type of project do you prefer to participate in?",
+      "options": [
+        { "text": "Building user products from 0 to 1", "dimension": "U", "weight": 2 },
+        { "text": "Designing distributed system architecture", "dimension": "I", "weight": 2 },
+        { "text": "Exploring possibilities of cutting-edge technology", "dimension": "Q", "weight": 1 },
+        { "text": "Maintaining and optimizing existing systems", "dimension": "G", "weight": 1 }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "What gives you the most sense of achievement at work?",
+      "options": [
+        { "text": "Completing a full feature independently", "dimension": "O", "weight": 2 },
+        { "text": "Tackling difficult problems with the team", "dimension": "T", "weight": 2 },
+        { "text": "Writing elegant solutions", "dimension": "G", "weight": 1 },
+        { "text": "Discovering new technological breakthroughs", "dimension": "Q", "weight": 1 }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "How do you view code comments?",
+      "options": [
+        { "text": "Good code should be self-explanatory, write fewer comments", "dimension": "G", "weight": 2 },
+        { "text": "Comments are important for team understanding", "dimension": "T", "weight": 2 },
+        { "text": "Complex logic must have detailed comments", "dimension": "R", "weight": 1 },
+        { "text": "As long as it runs, comments are optional", "dimension": "X", "weight": 1 }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "When encountering performance issues, what would you do?",
+      "options": [
+        { "text": "Analyze bottlenecks deeply and optimize systematically", "dimension": "I", "weight": 2 },
+        { "text": "Optimize parts that users can perceive first", "dimension": "U", "weight": 2 },
+        { "text": "Research various optimization algorithms and techniques", "dimension": "Q", "weight": 1 },
+        { "text": "Gradually improve following best practices", "dimension": "R", "weight": 1 }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "When a project enters a stable phase, what would you most like to do?",
+      "options": [
+        { "text": "Explore new approaches that could take the product to the next level", "dimension": "Q", "weight": 2 },
+        { "text": "Review the codebase to make it cleaner and more concise", "dimension": "G", "weight": 2 },
+        { "text": "Improve monitoring and backup systems for better reliability", "dimension": "R", "weight": 1 },
+        { "text": "Gather user feedback to optimize the workflow", "dimension": "U", "weight": 1 }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "If you could keep one tech book on your desk, which would it be?",
+      "options": [
+        { "text": "\"Code Complete\" - Programming Practice Guide", "dimension": "O", "weight": 2 },
+        { "text": "\"The Mythical Man-Month\" - Software Engineering Management", "dimension": "T", "weight": 2 },
+        { "text": "\"Refactoring\" - Improving Existing Code Design", "dimension": "G", "weight": 1 },
+        { "text": "\"The Elements of User Experience\" - Product Design Thinking", "dimension": "U", "weight": 1 }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "What's your attitude toward unit testing?",
+      "options": [
+        { "text": "Essential, it's a guarantee of code quality", "dimension": "R", "weight": 2 },
+        { "text": "Too time-consuming, rapid iteration is more important", "dimension": "X", "weight": 2 },
+        { "text": "Tests should also be written elegantly and clearly", "dimension": "G", "weight": 1 },
+        { "text": "Write them if team standards require", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "What kind of problems do you prefer to solve?",
+      "options": [
+        { "text": "How people interact with and use products", "dimension": "U", "weight": 2 },
+        { "text": "System architecture and data flow", "dimension": "I", "weight": 2 },
+        { "text": "Algorithm optimization and performance tuning", "dimension": "Q", "weight": 1 },
+        { "text": "Code refactoring and pattern design", "dimension": "G", "weight": 1 }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "When starting a new project, what would you do?",
+      "options": [
+        { "text": "Set up a complete development environment first", "dimension": "R", "weight": 2 },
+        { "text": "Start writing core functionality directly", "dimension": "X", "weight": 2 },
+        { "text": "Carefully design the project architecture", "dimension": "G", "weight": 1 },
+        { "text": "Discuss technical solutions with the team", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "When designing APIs, what do you focus on most?",
+      "options": [
+        { "text": "Interface consistency and predictability", "dimension": "G", "weight": 2 },
+        { "text": "Developer user experience", "dimension": "U", "weight": 2 },
+        { "text": "Performance and scalability", "dimension": "I", "weight": 1 },
+        { "text": "Backward compatibility", "dimension": "R", "weight": 1 }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "When facing technical debt, what would you do?",
+      "options": [
+        { "text": "Make a plan to refactor gradually", "dimension": "R", "weight": 2 },
+        { "text": "If it works, focus on new features first", "dimension": "X", "weight": 2 },
+        { "text": "Rewrite it into a more elegant version", "dimension": "G", "weight": 1 },
+        { "text": "Evaluate the impact on users", "dimension": "U", "weight": 1 }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "What do you focus more on in code?",
+      "options": [
+        { "text": "Runtime efficiency and resource consumption", "dimension": "I", "weight": 2 },
+        { "text": "User perception and interaction smoothness", "dimension": "U", "weight": 2 },
+        { "text": "Maintainability and extensibility", "dimension": "R", "weight": 1 },
+        { "text": "Innovation and technical content", "dimension": "X", "weight": 1 }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "When learning new technologies, you tend to?",
+      "options": [
+        { "text": "Study principles and source code deeply", "dimension": "Q", "weight": 2 },
+        { "text": "Get hands-on quickly with a project", "dimension": "X", "weight": 2 },
+        { "text": "Learn following best practices", "dimension": "R", "weight": 1 },
+        { "text": "Learn and discuss with colleagues", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "What kind of code can you least tolerate?",
+      "options": [
+        { "text": "Chaotic logic, hard to understand", "dimension": "G", "weight": 2 },
+        { "text": "Lack of testing, prone to errors", "dimension": "R", "weight": 2 },
+        { "text": "Poor performance, affecting experience", "dimension": "I", "weight": 1 },
+        { "text": "Confusing workflows that frustrate users", "dimension": "U", "weight": 1 }
+      ]
+    },
+    {
+      "id": 21,
+      "text": "How do you view technical documentation?",
+      "options": [
+        { "text": "Detailed documentation is key to project success", "dimension": "R", "weight": 2 },
+        { "text": "Concise and clear, highlighting key points", "dimension": "G", "weight": 2 },
+        { "text": "Focus on user scenarios and use cases", "dimension": "U", "weight": 1 },
+        { "text": "Team collaboration to maintain and update", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 22,
+      "text": "What kind of programming experience do you enjoy more?",
+      "options": [
+        { "text": "Focused deep thinking alone", "dimension": "O", "weight": 2 },
+        { "text": "Real-time discussion of ideas with colleagues", "dimension": "T", "weight": 2 },
+        { "text": "Quick feedback when people try your features", "dimension": "U", "weight": 1 },
+        { "text": "Changes in system monitoring data", "dimension": "I", "weight": 1 }
+      ]
+    },
+    {
+      "id": 23,
+      "text": "For open source projects, you prefer to?",
+      "options": [
+        { "text": "Contribute new features and innovative ideas", "dimension": "X", "weight": 2 },
+        { "text": "Fix bugs and improve documentation", "dimension": "R", "weight": 2 },
+        { "text": "Optimize code structure and design", "dimension": "G", "weight": 1 },
+        { "text": "Help community members solve problems", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 24,
+      "text": "What do you think good software should be?",
+      "options": [
+        { "text": "Easy to learn and use, minimal friction", "dimension": "U", "weight": 2 },
+        { "text": "Clear architecture, easy to extend", "dimension": "I", "weight": 2 },
+        { "text": "Elegant code, clear logic", "dimension": "G", "weight": 1 },
+        { "text": "Innovative features, cutting-edge technology", "dimension": "Q", "weight": 1 }
+      ]
+    },
+    {
+      "id": 25,
+      "text": "When encountering difficult problems, what would you do?",
+      "options": [
+        { "text": "Research alone until solved", "dimension": "O", "weight": 2 },
+        { "text": "Seek help from the team", "dimension": "T", "weight": 2 },
+        { "text": "Consult documentation and best practices", "dimension": "R", "weight": 1 },
+        { "text": "Try different solution approaches", "dimension": "X", "weight": 1 }
+      ]
+    },
+    {
+      "id": 26,
+      "text": "What kind of system would you prefer to maintain?",
+      "options": [
+        { "text": "Customer-facing features and workflows", "dimension": "U", "weight": 2 },
+        { "text": "Backend services and databases", "dimension": "I", "weight": 2 },
+        { "text": "Core algorithms and business logic", "dimension": "Q", "weight": 1 },
+        { "text": "Build tools and development processes", "dimension": "R", "weight": 1 }
+      ]
+    },
+    {
+      "id": 27,
+      "text": "What kind of development tools do you prefer?",
+      "options": [
+        { "text": "Feature-rich integrated development environments", "dimension": "R", "weight": 2 },
+        { "text": "Lightweight, highly customizable editors", "dimension": "G", "weight": 2 },
+        { "text": "Standard tools used uniformly by the team", "dimension": "T", "weight": 1 },
+        { "text": "Latest and coolest development tools", "dimension": "X", "weight": 1 }
+      ]
+    },
+    {
+      "id": 28,
+      "text": "What kind of work pace do you prefer?",
+      "options": [
+        { "text": "Stable iteration, ensuring quality", "dimension": "R", "weight": 2 },
+        { "text": "Fast trial and error, agile development", "dimension": "X", "weight": 2 },
+        { "text": "Deep thinking, meticulous crafting", "dimension": "G", "weight": 1 },
+        { "text": "Team collaboration, regular synchronization", "dimension": "T", "weight": 1 }
+      ]
+    },
+    {
+      "id": 29,
+      "text": "What do you think technological innovation should be?",
+      "options": [
+        { "text": "Exploring unknown technological boundaries", "dimension": "Q", "weight": 2 },
+        { "text": "Solving practical business problems", "dimension": "G", "weight": 2 },
+        { "text": "Improving user experience", "dimension": "U", "weight": 1 },
+        { "text": "Built on a stable foundation", "dimension": "R", "weight": 1 }
+      ]
+    },
+    {
+      "id": 30,
+      "text": "When handling urgent production issues, what would you do?",
+      "options": [
+        { "text": "Quickly locate the problem and apply a temporary fix", "dimension": "X", "weight": 2 },
+        { "text": "Carefully analyze the root cause before handling", "dimension": "Q", "weight": 2 },
+        { "text": "Follow standard procedures to ensure no mistakes", "dimension": "R", "weight": 1 },
+        { "text": "Promptly notify relevant people and users", "dimension": "T", "weight": 1 }
+      ]
+    }
+  ]
+}

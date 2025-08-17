@@ -1,26 +1,31 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import * as whatIs from "../content/en/what-is.md";
+import { getLangFromUrl, useTranslations } from "../i18n/ui";
+import Footer from "../components/Footer.astro";
 
-import * as whatIs from "../content/what-is.md";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout>
-  <main class="flex flex-col items-center justify-center h-screen max-w-[960px]">
+  <main class="max-w-[960px] mx-auto">
     <div class="space-y-4">
       <div class="space-y-1">
-        <h1 class="text-4xl font-bold text-flexoki-base-700">CPTI</h1>
+        <h1 class="text-3xl font-bold text-flexoki-base-700">{t('home.title')}</h1>
         <p class="text-lg text-flexoki-base-500">
-          Coder Personality Type Identification
+          {t('home.subtitle')}
         </p>
       </div>
       <a
-        href="/quiz"
-        class="bg-flexoki-green-500 text-flexoki-paper font-medium px-2 py-1 text-sm rounded-md"
-        >开始测试</a
+        href={lang === 'en' ? '/quiz' : `/${lang}/quiz`}
+        class="inline-flex bg-flexoki-green-500 text-flexoki-paper font-medium px-2 py-1 text-sm rounded-md"
+        >{t('home.startTest')}</a
       >
-      <div class="prose">
+      <div class="prose max-w-[960px]">
         <whatIs.Content />
       </div>
     </div>
   </main>
+  <Footer />
 </Layout>

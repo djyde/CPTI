@@ -1,9 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import personalityTypesData from "../../data/personality-types.json";
+import personalityTypesDataEn from "../../data/en/personality-types.json";
+import { getLangFromUrl, useTranslations } from "../../i18n/ui";
 
 export async function getStaticPaths() {
-  const types = Object.keys(personalityTypesData.types);
+  const types = Object.keys(personalityTypesDataEn.types);
   console.log(types);
   return types.map((type) => ({
     params: { type: type },
@@ -11,6 +12,14 @@ export async function getStaticPaths() {
 }
 
 const { type } = Astro.params;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+// Load personality types data based on language
+const personalityTypesData = lang === 'zh' 
+  ? await import("../../data/zh/personality-types.json")
+  : personalityTypesDataEn;
+
 const personalityType =
   personalityTypesData.types[type as keyof typeof personalityTypesData.types];
 
@@ -21,17 +30,7 @@ if (!personalityType) {
 
 <Layout>
   <div class="min-h-screen bg-flexoki-paper">
-    <!-- Header -->
-    <header class="py-4">
-      <div class="max-w-3xl mx-auto px-8">
-        <a
-          href="/"
-          class="text-flexoki-base-500 hover:text-flexoki-base-700 inline-flex items-center"
-        >
-          ← 返回
-        </a>
-      </div>
-    </header>
+
 
     <!-- Main Content -->
     <main class="max-w-3xl mx-auto px-8 py-16">
@@ -43,9 +42,7 @@ if (!personalityType) {
         <h1 class="text-2xl mb-4 text-flexoki-base-700">
           {personalityType.name}
         </h1>
-        <p
-          class="text-base text-flexoki-base-700 max-w-xl mx-auto leading-loose"
-        >
+        <p class="text-base text-flexoki-base-700 leading-loose">
           {personalityType.description}
         </p>
       </div>
@@ -55,7 +52,7 @@ if (!personalityType) {
         <h2
           class="text-sm text-flexoki-base-500/60 font-bold mb-2 tracking-widest uppercase"
         >
-          核心特质
+          {t('type.coreTraits')}
         </h2>
         <div class="space-y-3 flex gap-3">
           {
@@ -71,9 +68,9 @@ if (!personalityType) {
         <!-- Strengths -->
         <section class="">
           <h2
-            class="text-sm  text-flexoki-base-500/60 font-bold mb-2 tracking-widest uppercase"
+            class="text-sm text-flexoki-base-500/60 font-bold mb-2 tracking-widest uppercase"
           >
-            优势特长
+            {t('type.strengths')}
           </h2>
           <ul class="space-y-2">
             {
@@ -89,9 +86,9 @@ if (!personalityType) {
         <!-- Challenges -->
         <section>
           <h2
-            class="text-sm  text-flexoki-base-500/60 font-bold mb-2 tracking-widest uppercase"
+            class="text-sm text-flexoki-base-500/60 font-bold mb-2 tracking-widest uppercase"
           >
-            发展挑战
+            {t('type.challenges')}
           </h2>
           <ul class="space-y-2">
             {
@@ -108,19 +105,11 @@ if (!personalityType) {
       <!-- Action Buttons -->
       <div class="text-center space-y-8 mt-24">
         <a
-          href="/quiz"
-          class="inline-flex text-flexoki-base-600 hover:text-flexoki-base-800  text-sm tracking-wide uppercase border-b border-flexoki-base-300 pb-1"
+          href={lang === 'en' ? '/quiz' : `/${lang}/quiz`}
+          class="inline-flex text-flexoki-base-600 hover:text-flexoki-base-800 text-sm tracking-wide uppercase border-b border-flexoki-base-300 pb-1"
         >
-          重新测试
+          {t('type.retakeQuiz')}
         </a>
-        <div>
-          <button
-            onclick="navigator.share ? navigator.share({title: 'CPTI 测试结果', text: `我的编程人格类型是：${personalityType.name} (${type})`, url: window.location.href}) : copyToClipboard(window.location.href)"
-            class="text-flexoki-base-500 hover:text-flexoki-base-700  text-sm tracking-wide uppercase"
-          >
-            分享结果
-          </button>
-        </div>
       </div>
     </main>
 
@@ -129,13 +118,11 @@ if (!personalityType) {
       <div class="max-w-3xl mx-auto px-8">
         <div class="text-center">
           <p
-            class="text-xs text-flexoki-base-500  tracking-widest uppercase mb-2"
+            class="text-xs text-flexoki-base-500 tracking-widest uppercase mb-2"
           >
-            CPTI
+            {t('type.footer.title')}
           </p>
-          <p class="text-xs text-flexoki-base-500 ">
-            编程人格类型测试
-          </p>
+          <p class="text-xs text-flexoki-base-500">{t('type.footer.subtitle')}</p>
         </div>
       </div>
     </footer>

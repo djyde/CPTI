@@ -1,0 +1,31 @@
+{
+  "nav.home": "首页",
+  "nav.quiz": "测试",
+  "nav.back": "返回",
+  "nav.retake": "重新测试",
+  
+  "home.title": "CPTI",
+  "home.subtitle": "程序员 16 型人格测试",
+  "home.startTest": "开始测试",
+  "home.startTest.zh": "开始测试",
+  
+  "quiz.title": "编程人格类型测试",
+  "quiz.subtitle": "发现你的编程人格类型",
+  "quiz.next": "下一题",
+  "quiz.previous": "上一题",
+  "quiz.submit": "提交",
+  "quiz.loading": "加载中...",
+  "quiz.progress": "第 {current} 题，共 {total} 题",
+  
+  "type.coreTraits": "核心特质",
+  "type.strengths": "优势特长",
+  "type.challenges": "发展挑战",
+  "type.retakeQuiz": "重新测试",
+  "type.footer.title": "CPTI",
+  "type.footer.subtitle": "编程人格类型测试",
+  
+  "common.loading": "加载中...",
+  "common.error": "发生错误",
+  "common.copySuccess": "链接已复制到剪贴板！",
+  "common.copyError": "复制失败，请手动复制链接"
+}

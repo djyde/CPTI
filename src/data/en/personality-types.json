@@ -1,0 +1,277 @@
+{
+  "types": {
+    "URGO": {
+      "name": "Pixel Craftsman",
+      "description": "Like an artisan sculpting raw jade, you meticulously carve every pixel's position in the digital world. What emerges from your fingertips is not just code, but art—every line of CSS carries a pursuit of beauty, every interaction embodies deep contemplation of user experience. Alone at your screen in the deep night, with a perfectionist's dedication and an artist's inspiration, you transform imagined interfaces into reality, allowing every user to feel that warmth and beauty emanating from the depths of your code.",
+      "traits": ["User-Oriented", "Reliable & Stable", "Craftsmanship", "Independent Work"],
+      "strengths": [
+        "Sharp insight into user experience",
+        "Able to independently complete high-quality frontend work",
+        "Attention to detail and visual aesthetics",
+        "Commitment to code quality and best practices"
+      ],
+      "challenges": [
+        "May over-pursue perfection, affecting progress",
+        "Tends to work alone, rarely seeking collaboration",
+        "Cautious attitude toward new technologies",
+        "May overlook backend system complexity"
+      ]
+    },
+    "URGT": {
+      "name": "User Experience Guardian",
+      "description": "You are the user experience poet in the team, weaving beautiful dialogues between users and products with code. In your eyes, every user click is a touch of the soul, every page transition is an emotional journey. You excel at listening to users' inner voices, transforming their unspoken needs into intuitive and elegant interactive experiences. In the symphony of team collaboration, you are the conductor who harmonizes different parts, perfectly blending technical rationality with user emotion to create digital works that are both practical and moving.",
+      "traits": ["User-Oriented", "Reliable & Stable", "Craftsmanship", "Team Collaboration"],
+      "strengths": [
+        "Deep understanding of user needs and experience design",
+        "Good at promoting UX best practices within the team",
+        "Able to balance technical implementation and user experience",
+        "Strong cross-functional collaboration abilities"
+      ],
+      "challenges": [
+        "May insist on overly high standards in rapid iterations",
+        "Needs time to convince team to accept UX improvements",
+        "May have limited understanding of backend technologies",
+        "Easily biased toward user-facing concerns in technical decisions"
+      ]
+    },
+    "URQO": {
+      "name": "Interface Explorer",
+      "description": "You are a lone ranger on the digital frontier, sailing across unknown oceans of technology. Every emerging frontend framework is a new continent for your exploration, every innovative interaction pattern is a treasure you discover. Your curiosity shines like the brightest star in the night sky, guiding you through the maze of code to find paths toward the future. Alone in your laboratory-like workspace, you use sharp intuition and fearless courage to nurture those budding technological concepts into revolutionary innovations that transform user experience, lighting the way forward for the entire industry.",
+      "traits": ["User-Oriented", "Reliable & Stable", "Exploratory Spirit", "Independent Work"],
+      "strengths": [
+        "Sensitive to new frontend technologies and interaction patterns",
+        "Able to independently research and implement innovative user interfaces",
+        "Good at discovering and solving complex frontend problems",
+        "Unique insights in user experience innovation"
+      ],
+      "challenges": [
+        "May spend too much time on technical exploration",
+        "Tends to use new technologies over stable solutions",
+        "Rarely shares exploration results with the team",
+        "May neglect overall project progress"
+      ]
+    },
+    "URQT": {
+      "name": "User Innovation Driver",
+      "description": "You are the innovation guide in the team, like the first ray of spring sunlight, awakening dormant seeds of creativity. Your vision always looks toward the horizon, seeing new realms of user experience that others haven't yet noticed. Under your leadership, the team becomes an expedition, bravely stepping into uncharted territories of frontend technology, turning seemingly impossible ideas into reality one by one. You excel at building bridges between innovative passion and project reality, ensuring every technological breakthrough truly serves user needs, allowing every team member to find their own light in exploration.",
+      "traits": ["User-Oriented", "Reliable & Stable", "Exploratory Spirit", "Team Collaboration"],
+      "strengths": [
+        "Can lead the team to explore new user experience patterns",
+        "Good at converting technical innovation into user value",
+        "Strong technical communication and sharing abilities",
+        "Able to balance innovation with project stability"
+      ],
+      "challenges": [
+        "Needs to balance exploration time and delivery pressure",
+        "May encounter resistance when convincing team to adopt new technologies",
+        "Needs continuous learning to maintain technical sensitivity",
+        "May not pay enough attention to backend systems"
+      ]
+    },
+    "UXGO": {
+      "name": "Rapid Prototyper",
+      "description": "You are a magician of ideas, possessing the magical ability to instantly materialize abstract concepts. In your hands, a vague product concept can transform into a tangible interface prototype within just a few hours. Your work rhythm is like passionate jazz music, improvisational and full of creativity, every keystroke is a burst of inspiration. Alone in your creative studio, you engage in dialogue with users through rapid iteration, making every prototype a stepping stone toward the perfect product. Your existence makes 'ideas' no longer castles in the air, but touchable reality.",
+      "traits": ["User-Oriented", "Rapid Experimentation", "Craftsmanship", "Independent Work"],
+      "strengths": [
+        "Can quickly transform ideas into usable interface prototypes",
+        "Good at independently completing the full process from design to implementation",
+        "Sensitive to user feedback with fast iteration speed",
+        "Excels in innovative projects"
+      ],
+      "challenges": [
+        "May compromise on code quality",
+        "Tends to work alone with less team collaboration",
+        "May neglect long-term maintainability",
+        "Insufficient attention to system architecture"
+      ]
+    },
+    "UXGT": {
+      "name": "Agile Interface Developer",
+      "description": "You are a dancer in the agile development world, gracefully weaving through the fast-paced project rhythm. You deeply understand the art of team collaboration, able to dance perfectly with designers' creative sparks, product managers' business wisdom, and users' real needs. In your world, every iteration is an elegant turn, every Sprint is a spectacular performance. You use sharp insight to capture changing requirements and skilled technical methods to respond quickly, allowing every team member to feel the power of collaboration and the joy of creation.",
+      "traits": ["User-Oriented", "Rapid Experimentation", "Craftsmanship", "Team Collaboration"],
+      "strengths": [
+        "Can collaborate efficiently with designers and product managers",
+        "Quickly responds to changing user requirements",
+        "Good at promoting agile development practices within the team",
+        "Able to balance speed and code quality"
+      ],
+      "challenges": [
+        "May accumulate technical debt in rapid iterations",
+        "Needs to balance team collaboration and personal efficiency",
+        "May lack time for deep technical exploration",
+        "Needs to continuously optimize team workflows"
+      ]
+    },
+    "UXQO": {
+      "name": "Interface Experimenter",
+      "description": "You are the mad scientist in the user interface laboratory, harboring childlike curiosity toward every emerging frontend technology. On your experimental bench, WebGL and CSS animations shine together, React and Vue coexist harmoniously. Every new API is a brush in your hand, every interaction pattern is material for your creation. Alone in your code laboratory, you use fearless exploratory spirit to challenge technological boundaries, transforming seemingly wild ideas into stunning user experiences. Each of your experiments might become tomorrow's industry standard.",
+      "traits": ["User-Oriented", "Rapid Experimentation", "Exploratory Spirit", "Independent Work"],
+      "strengths": [
+        "Dares to try the latest frontend technologies and frameworks",
+        "Can quickly validate new interaction design ideas",
+        "Sharp sense for user experience trends",
+        "Strong ability to independently solve complex technical problems"
+      ],
+      "challenges": [
+        "May over-pursue technological novelty",
+        "Tends to explore alone, rarely sharing results",
+        "May neglect project stability requirements",
+        "Needs to balance experimentation and practicality"
+      ]
+    },
+    "UXQT": {
+      "name": "User Experience Innovator",
+      "description": "You are the leader of the user experience revolution, standing at the forefront of the era's transformation, using visionary insight to guide your team toward the future. In your eyes, every user experience innovation is a redefinition of the relationship between humans and technology, every frontend technological breakthrough is a ladder toward a better digital world. Like a symphony conductor, you coordinate the talents of every team member, making innovative sparks burn more fiercely in collaboration. Your leadership is reflected not only in technological foresight but also in the ability to ignite the creative passion deep within everyone's heart.",
+      "traits": ["User-Oriented", "Rapid Experimentation", "Exploratory Spirit", "Team Collaboration"],
+      "strengths": [
+        "Can lead the team to explore cutting-edge user experience technologies",
+        "Good at quickly validating and iterating innovative ideas",
+        "Strong technical influence and leadership",
+        "Can transform experimental results into team practices"
+      ],
+      "challenges": [
+        "Needs to balance innovative exploration and project delivery",
+        "May encounter resistance when pushing team to accept new technologies",
+        "Needs to continuously follow industry technology trends",
+        "May not pay enough attention to system stability"
+      ]
+    },
+    "IRGO": {
+      "name": "Architecture Guardian",
+      "description": "You are the master architect of the digital world, building indestructible technological fortresses on invisible foundations. Like ancient stonemasons, you are meticulous about every piece of code's position, rigorous about every detail of system architecture. In your world, stability is not just a technical metric, but a belief and commitment. You explore alone in the profound system maze, using craftsman-like patience and sage-like insight to build the most reliable cornerstone for the entire digital ecosystem. Every line of your code carries the pursuit of perfection, every architectural decision reflects deep consideration for the future.",
+      "traits": ["Infrastructure", "Reliable & Stable", "Craftsmanship", "Independent Work"],
+      "strengths": [
+        "Deep understanding of system architecture and infrastructure",
+        "Able to independently design and maintain complex backend systems",
+        "Extremely high requirements for code quality and system stability",
+        "Good at discovering and solving system performance issues"
+      ],
+      "challenges": [
+        "May over-pursue technical perfection, affecting progress",
+        "Tends to work alone with less team collaboration",
+        "Cautious attitude toward adopting new technologies",
+        "May neglect user-facing requirements"
+      ]
+    },
+    "IRGT": {
+      "name": "System Stability Expert",
+      "description": "You are the technical lighthouse in the team, using the light of stability to guide the entire project's course. Under your protection, the system is like an ancient tree that has weathered a thousand years of wind and rain, deeply rooted and flourishing, unafraid of any technical storm. You deeply understand the power of collaboration, good at integrating personal technical wisdom into the team's collective creation, allowing every team member to showcase their talents on a solid technical foundation. You are the spokesperson for quality, using rigorous attitude and professional skills to establish unshakeable technical standards for the team, making every deployment as elegant as poetry, every operation as harmonious as song.",
+      "traits": ["Infrastructure", "Reliable & Stable", "Craftsmanship", "Team Collaboration"],
+      "strengths": [
+        "Can establish and maintain technical standards within the team",
+        "Good at solving complex system problems through collaboration",
+        "Deep understanding of system monitoring and operations",
+        "Able to balance system stability and business requirements"
+      ],
+      "challenges": [
+        "May insist on overly high standards in rapid iterations",
+        "Needs time to convince team to accept architectural improvements",
+        "May have limited understanding of frontend technologies",
+        "Easily biased toward system-level concerns in technical decisions"
+      ]
+    },
+    "IRQO": {
+      "name": "System Explorer",
+      "description": "You are the archaeologist of the technical world, excavating precious knowledge buried by time in the deep caves of system foundations. Every line of assembly code is ancient text you decipher, every architectural pattern is a mysterious relic you explore. Alone in technology's ivory tower, you use scholar's rigor and explorer's courage to unveil the deepest mysteries of computer science. In your research, performance optimization is not just numerical improvement, but perfect interpretation of technical aesthetics. Each of your discoveries might rewrite the rules of system design, every innovation might open new eras of technological development.",
+      "traits": ["Infrastructure", "Reliable & Stable", "Exploratory Spirit", "Independent Work"],
+      "strengths": [
+        "Deep understanding of underlying system principles",
+        "Able to independently research and implement complex technical solutions",
+        "Good at discovering system performance optimization opportunities",
+        "Excels in solving technical challenges"
+      ],
+      "challenges": [
+        "May spend too much time on technical research",
+        "Tends to use complex solutions over simple ones",
+        "Rarely shares research results with the team",
+        "May neglect the urgency of business requirements"
+      ]
+    },
+    "IRQT": {
+      "name": "Architecture Innovator",
+      "description": "You are the prophet of technological innovation, standing at the forefront of system architecture evolution, using forward-thinking vision to lead your team toward technology's new era. Under your leadership, traditional architectural patterns gain new vitality, innovative design concepts take root and flourish in team collaboration. Like a gardener in the technical world, you carefully nurture every seed of innovation, allowing them to thrive in the fertile soil of teamwork. Every architectural decision you make carries deep thinking about the future, every technology selection reflects precise judgment of team capabilities. Under your guidance, systems are not just collections of code, but crystallizations of team wisdom.",
+      "traits": ["Infrastructure", "Reliable & Stable", "Exploratory Spirit", "Team Collaboration"],
+      "strengths": [
+        "Can lead the team to explore new architectural patterns",
+        "Good at applying technical innovation to actual systems",
+        "Strong technical influence and leadership",
+        "Able to balance innovation with system stability"
+      ],
+      "challenges": [
+        "Needs to balance technical exploration and project delivery",
+        "May encounter resistance when pushing team to adopt new architectures",
+        "Needs continuous learning of new system technologies",
+        "May not pay enough attention to user experience"
+      ]
+    },
+    "IXGO": {
+      "name": "System Hacker",
+      "description": "You are the ranger in the system world, freely galloping across the vast territories of backend technology. Your code is like swift wind and sudden rain, fast and powerful, able to transform ideas into running systems in the shortest time. On your workbench, Docker containers line up like armies, API interfaces harmonize like musical instruments, every service performs at maximum efficiency under your command. You face complex technical challenges alone, using hacker-like sharp intuition and engineer's solid foundation to carve shortcuts to success through the system jungle.",
+      "traits": ["Infrastructure", "Rapid Experimentation", "Craftsmanship", "Independent Work"],
+      "strengths": [
+        "Can quickly build and deploy backend services",
+        "Good at independently solving system integration problems",
+        "Strong learning ability for new backend technology stacks",
+        "Excels in rapid prototyping and MVP development"
+      ],
+      "challenges": [
+        "May lack long-term consideration in system design",
+        "Tends to work alone with less team collaboration",
+        "May neglect code quality and documentation",
+        "Insufficient attention to frontend user experience"
+      ]
+    },
+    "IXGT": {
+      "name": "Agile Backend Developer",
+      "description": "You are the coordination master in the agile backend world, building communication bridges between rapidly changing business requirements and complex technical implementations. Your work rhythm is like a precision Swiss watch, every gear perfectly meshing with other parts of the team, every iteration pushing the entire project forward. Under your coordination, frontend creativity, product vision, and operational stability requirements all find perfect balance points in backend services. You use agile thinking and collaborative wisdom to make complex backend architecture as harmonious as music, filling every team sprint with rhythm and achievement.",
+      "traits": ["Infrastructure", "Rapid Experimentation", "Craftsmanship", "Team Collaboration"],
+      "strengths": [
+        "Can collaborate efficiently with frontend and product teams",
+        "Quickly responds to changing business requirements",
+        "Good at promoting backend development best practices within the team",
+        "Able to balance development speed and code quality"
+      ],
+      "challenges": [
+        "May accumulate technical debt in rapid iterations",
+        "Needs to balance team collaboration and development efficiency",
+        "May lack time for deep technical research",
+        "Needs to continuously optimize development and deployment processes"
+      ]
+    },
+    "IXQO": {
+      "name": "Technical Adventurer",
+      "description": "You are the adventurer in the backend technology world, always walking at the forefront of technology, using fearless courage to explore unknown technical territories. In your laboratory, the latest programming languages collide with traditional architectural patterns to create innovative sparks, microservices and serverless architectures perform gorgeous technical variations under your hands. Like Columbus in the technical world, every exploration might discover new continents that change the game rules. You sail alone in the ocean of code, using sharp technical intuition and relentless exploratory spirit to pioneer new routes toward the future for the entire industry.",
+      "traits": ["Infrastructure", "Rapid Experimentation", "Exploratory Spirit", "Independent Work"],
+      "strengths": [
+        "Dares to try the latest backend technologies and frameworks",
+        "Can quickly validate new architectural design ideas",
+        "Sharp sense for technology trends",
+        "Strong ability to independently solve complex system problems"
+      ],
+      "challenges": [
+        "May over-pursue technological novelty",
+        "Tends to explore alone, rarely sharing results",
+        "May neglect system stability requirements",
+        "Needs to balance experimentation and practicality"
+      ]
+    },
+    "IXQT": {
+      "name": "System Innovation Leader",
+      "title": "The System Innovation Leader",
+      "description": "You are the navigator of system innovation, standing at the crest of the backend technology revolution, using outstanding leadership to guide your team toward new technological heights. Under your leadership, the team becomes an elite expedition, bravely stepping into uncharted territories of backend technology, turning seemingly impossible architectural dreams into reality one by one. You deeply understand the perfect combination of technology and humanity, able to stimulate the creative potential deep within every team member's heart while driving technological innovation. Every decision you make carries deep insight into technology's future, every innovation sets new benchmarks for the entire industry. Under your guidance, systems are not just collections of servers, but perfect embodiments of team wisdom and passion.",
+      "traits": ["Infrastructure", "Rapid Experimentation", "Exploratory Spirit", "Team Collaboration"],
+      "strengths": [
+        "Can lead the team to explore cutting-edge backend technologies",
+        "Good at quickly validating and iterating technical solutions",
+        "Strong technical influence and leadership",
+        "Can transform experimental results into team practices"
+      ],
+      "challenges": [
+        "Needs to balance technical innovation and project delivery",
+        "May encounter resistance when pushing team to accept new technologies",
+        "Needs to continuously follow backend technology development trends",
+        "May not pay enough attention to user experience aspects"
+      ]
+    }
+  }
+}

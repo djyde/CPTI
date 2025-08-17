@@ -1,18 +1,31 @@
 ---
 import "../styles/global.css";
+import LanguageSwitcher from "../components/LanguageSwitcher.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/ui";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <!doctype html>
-<html>
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>CPTI - 编程人格类型测试</title>
+		<title>CPTI - {t('home.subtitle')}</title>
 	</head>
 	<body>
-		<main class="flex flex-col items-center justify-center h-screen">
+		<header class="py-4 px-8 lg:px-0 max-w-[960px] mx-auto">
+			<div class="max-w-6xl mx-auto flex justify-between items-center">
+				<a href={lang === 'en' ? '/' : `/${lang}`} class="text-flexoki-base-700 hover:text-flexoki-base-900 font-medium">
+					CPTI
+				</a>
+				<LanguageSwitcher />
+			</div>
+		</header>
+		<main class="">
 			<slot />
 		</main>
 	</body>
