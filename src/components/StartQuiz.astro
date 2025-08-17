@@ -1,0 +1,11 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/ui";
+
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<button class="inline-flex bg-flexoki-green-500 text-flexoki-paper font-medium px-2 py-1 text-sm rounded-md">
+  {t("home.startTest")}
+</button>

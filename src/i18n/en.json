@@ -3,11 +3,11 @@
   "nav.quiz": "Quiz",
   "nav.back": "Back",
   "nav.retake": "Retake Quiz",
+  "nav.whatIs": "What is CBTI?",
   
   "home.title": "CPTI",
-  "home.subtitle": "Coder Personality Type Identification",
+  "home.subtitle": "Coder Personality Type Indicator",
   "home.startTest": "Start Test",
-  "home.startTest.zh": "开始测试",
   
   "quiz.title": "Coder Personality Type Quiz",
   "quiz.subtitle": "Discover your programming personality type",
