@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/ui";
 import Quiz from "../components/Quiz";
+import Footer from "../components/Footer.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -22,4 +23,5 @@ const t = useTranslations(lang);
       </div>
     </div>
   </main>
+  <Footer />
 </Layout>

@@ -104,7 +104,7 @@
     },
     "UXQO": {
       "name": "Interface Experimenter",
-      "description": "You are the mad scientist in the user interface laboratory, harboring childlike curiosity toward every emerging frontend technology. On your experimental bench, WebGL and CSS animations shine together, React and Vue coexist harmoniously. Every new API is a brush in your hand, every interaction pattern is material for your creation. Alone in your code laboratory, you use fearless exploratory spirit to challenge technological boundaries, transforming seemingly wild ideas into stunning user experiences. Each of your experiments might become tomorrow's industry standard.",
+      "description": "You are the experimenter in the world of code, harboring childlike curiosity toward every emerging frontend technology framework. In your development environment, new programming patterns and innovative architectural designs are validated through rapid coding and bold experimentation. Every new API is a tool for your exploration, every programming paradigm is material for your experiments. Alone in your code laboratory, you use fearless exploratory spirit to challenge the limitations of traditional development approaches, transforming seemingly cutting-edge technical concepts into viable code solutions. Each of your technical experiments might bring breakthrough development insights to the team.",
       "traits": ["User-Oriented", "Rapid Experimentation", "Exploratory Spirit", "Independent Work"],
       "strengths": [
         "Dares to try the latest frontend technologies and frameworks",
