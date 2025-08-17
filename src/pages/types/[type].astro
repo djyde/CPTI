@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import personalityTypesDataEn from "../../data/en/personality-types.json";
 import { getLangFromUrl, useTranslations } from "../../i18n/ui";
+import Footer from "../../components/Footer.astro";
 
 export async function getStaticPaths() {
   const types = Object.keys(personalityTypesDataEn.types);
@@ -113,19 +114,7 @@ if (!personalityType) {
       </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="mt-32 pb-16">
-      <div class="max-w-3xl mx-auto px-8">
-        <div class="text-center">
-          <p
-            class="text-xs text-flexoki-base-500 tracking-widest uppercase mb-2"
-          >
-            {t('type.footer.title')}
-          </p>
-          <p class="text-xs text-flexoki-base-500">{t('type.footer.subtitle')}</p>
-        </div>
-      </div>
-    </footer>
+    <Footer />
   </div>
 
   <script>
