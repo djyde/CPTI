@@ -3,6 +3,7 @@ import Layout from "../../../layouts/Layout.astro";
 import personalityTypesDataZh from "../../../data/zh/personality-types.json";
 import { getLangFromUrl, useTranslations } from "../../../i18n/ui";
 import Footer from "../../../components/Footer.astro";
+import ShareButtons from "../../../components/ShareButtons.tsx";
 
 export async function getStaticPaths() {
   const types = Object.keys(personalityTypesDataZh.types);
@@ -72,15 +73,15 @@ if (!personalityType) {
           >
             {t('type.strengths')}
           </h2>
-          <ul class="space-y-2">
+          <div class="space-y-3">
             {
               personalityType.strengths.map((strength: string) => (
-                <li class="text-flexoki-base-700  leading-relaxed">
+                <div class="text-flexoki-base-700 leading-relaxed pl-4 border-l-2 border-flexoki-green-200 bg-flexoki-green-50/30 py-2 pr-3 rounded-r">
                   {strength}
-                </li>
+                </div>
               ))
             }
-          </ul>
+          </div>
         </section>
 
         <!-- Challenges -->
@@ -90,16 +91,26 @@ if (!personalityType) {
           >
             {t('type.challenges')}
           </h2>
-          <ul class="space-y-2">
+          <div class="space-y-3">
             {
               personalityType.challenges.map((challenge: string) => (
-                <li class="text-flexoki-base-700  leading-relaxed">
+                <div class="text-flexoki-base-700 leading-relaxed pl-4 border-l-2 border-flexoki-orange-200 bg-flexoki-orange-50/30 py-2 pr-3 rounded-r">
                   {challenge}
-                </li>
+                </div>
               ))
             }
-          </ul>
+          </div>
         </section>
+      </div>
+
+      <!-- Share Buttons -->
+      <div class="mt-12 pt-8">
+        <ShareButtons
+          lang={lang}
+          personalityType={type}
+          personalityName={personalityType.name}
+          client:load
+        />
       </div>
 
       <!-- Action Buttons -->
