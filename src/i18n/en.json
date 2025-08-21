@@ -27,5 +27,14 @@
   "common.loading": "Loading...",
   "common.error": "An error occurred",
   "common.copySuccess": "Link copied to clipboard!",
-  "common.copyError": "Copy failed, please copy the link manually"
+  "common.copyError": "Copy failed, please copy the link manually",
+
+  "share.title": "Share Your Results",
+  "share.x": "Share on X",
+  "share.copyLink": "Copy Link",
+  "share.copyScreenshot": "Copy Screenshot",
+  "share.generating": "Generating...",
+  "share.copied": "Copied!",
+  "share.description": "Share your CPTI personality type with friends and colleagues!",
+  "share.xText": "I just discovered my coding personality type: {type} - {name}! Take the CPTI test to find yours:"
 }
